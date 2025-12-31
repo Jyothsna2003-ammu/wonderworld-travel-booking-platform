@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/index.css">
+    <!-- <link rel="stylesheet" href="components/card/card.css"> -->
+    <link rel="stylesheet" href="Styles/home.css">
+    <script src="./Scripts/home.js" defer></script>
+    <title>WanderWorld</title>
+</head>
+<body>
+    <div id="megacontainer">
+        <header>
+            <div class="header-left-items">
+                    <button id="menu"><i class="fa-solid fa-bars"></i></button>
+                <div id="logo"><img src="./assets/logo/white-logo.png" alt=""></div>
+            </div>
+            <div class="header-right-items">
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/discover.html">Discover</a></li>
+                        <li><a href="/locations.html">Locations</a></li>
+                       
+                        <!-- <li><a href="/support.html">Support</a></li> -->
+                    </ul>            
+                </nav>
+                <!-- <button id="searchBtn"><i class="fa-solid fa-magnifying-glass">fd</i></button> -->
+                <a href="" id="usericon"><i class="fa-solid fa-user"></i></a>
+      
+                <!-- modified -->
+                <!-- <div id="userUpdated" style="font-size: 25px; color: white;"></div> -->
+      
+                <a href="/signup.html" id="signup">Sign up</a>
+      
+                <!-- Sourav added logout -->
+                <a href="#" id="logout">Log out</a>
+            </div>
+            
+            <div id="searchBar">
+                <button id="cancelSearch"><i class="fa-solid fa-arrow-left"></i></button>
+                <input type="search" name="search" id="search" placeholder="Search for a destination">
+                
+                <button id="searchEnter"><i class="fa-solid fa-magnifying-glass">fd</i></button>
+            </div>
+        </header>
+
+
+        <section id="hero">
+            <h1>Feel the Real Beauty of Nature</h1>
+            <div id="quickbook">
+                <div class="quickbook-input">
+                    <select name="locations" id="locations">
+                        <option value="">Destination</option>
+                    </select>
+                </div>
+                <div class="quickbook-input" id="startDate">
+                    <div>
+                    <button id="start">Check in Date</button>
+                    
+                    <i class="system datepicker dd-mm-yyyy"></i>
+                    </div>
+                </div>
+                
+ 
+                
+                <div class="quickbook-input">
+                    <select name="people" id="people">
+                        <option value="">People</option>
+                        <option value="1">1</option>s
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                    </select>
+                </div>  
+
+                <button id="bookNow">Book Now</button>
+            </div>
+
+            <div id="discount">
+                <p>Discount on new bookings</p>
+                <p><span id="hrs"></span>Hrs<span id="mins"></span>Min<span id="secs"></span>Sec</p>
+            </div>
+
+            <!--div id="blogroll">
+                <div>
+                    <div class="blog">
+                        <div class="blog-image">
+                            <img src="./assets/images/blog1.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <p class="title">Hundreds of Guides</p>
+                            <p class="desc">New High - Quality Guides Added Each Week</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="blog">
+                        <div class="blog-image">
+                            <img src="./assets/images/blog2.jpg" alt="">
+                        </div>
+                        <div class="blog-content">
+                            <p class="title">Local Experts</p>
+                            <p class="desc">The largest number of local guides in the world</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </li>
+                        <li><a href="./discover.html">See more</a></li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    
+                        
+                </div>
+            </div-->
+
+           
+
+    <!-- popular section -->
+
+    <section id="popular">
+
+        <div id="popheader"><h2>Popular Places to Visit</h2></div>
+        
+            <div class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/italy.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">Italy</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Mazandaran</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <div id="long-card" class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/scottland.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">Scottland</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Peterland</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/venice.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">Venice</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Maroch</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        
+            <div class="card-container">
+                <div class="card-image">
+                    <img src="/assets/images/india.jpg" alt="">
+                </div>
+                <div class="card-description">
+                        <p class="title">India</p>
+                        <p class="rating">
+                            <span>4.5</span> 
+                            <span class="stars">
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star fa-xs"></i>
+                                <i class="fa-solid fa-star-half fa-xs"></i>
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span class="location">Agra</span>
+                        </p>
+                        <p class="duration">1 day</p>
+                </div>
+                <div class="card-bookmark">
+                    <button>
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
+            </div>
+        
+        
+    </section>
+
+
+    <!-- discover section -->
+    <!--
+    <section id="holiday">
+
+        <h2>Perfect Holiday Plan</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">.
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card_image">
+                        <img src="./assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="card_content">
+                        <div class="card-title">Exploring diverse cultures and breathtaking sceneries was awe-inspiring. This travel experience was a dream come true.</div>
+                        <button class="card-button">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <button id="seeMoreArticles">See More</button>
+        </div>
+    </section> 
+
+    -->
+
+
+
+      <!-- calendar section -->
+    <div id="calendarpane">
+        <div>
+            <button id="calendarCancel"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div>
+            <h1>Choose Starting Date</h1>
+            <input type="date" name="" id="datepicker">
+            <button id="chooseDate">Continue</button>
+        </div>
+    </div>
+
+<footer>
+
+    <section id="summerspecial">
+        <div class="summerspecialcontainer">
+            <div class="summerspecialimage">
+                
+            </div>
+            <div class="summerspecialtext">
+                <p>Summer Special</p>
+                <h2>Upto 25% Off</h2>
+                <p>Spend the best vacation with us</p>
+                <p>THE NIGHTS OF THAILAND</p>
+                <a href="./locations.html">Book Now</a>
+            </div>
+        </div>
+            <section id="winterspecial">
+        <div class="winterspecialcontainer">
+            <div class="winterspecialimage">
+                
+            </div>
+            <div class="winterspecialtext">
+                <p>COOL COOL  Special OFFER</p>
+                <h2>Upto 50% Off</h2>
+                <p>Spend the best vacation with us</p>
+                <p> COOL COOL Kashmir </p>
+                
+                <a href="./locations.html">Book Now</a>
+            </div>
+        </div>
+        </section>  
+        <section id="rainyspecial">
+        <div class="rainyspecialcontainer">
+            <div class="rainyspecialimage">
+                
+            </div>
+            <div class="rainyspecialtext">
+                <p>RAINY SEASON SPECIAL</p>
+                <h2>Upto 40% Off</h2>
+                <p>Enjoy the rains with us</p>
+                <p>MAGICAL MONSOON GETAWAY</p>
+                <a href="./locations.html">Book Now</a>
+            </div>
+        </div>
+    </section>
+    </section>
+     
+    
+    <!-- End of footer -->
+
+    <!-- Sidebar -->
+
+    <div id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+                <li><a href="./locations.html">Locations</a></li>
+                <!--li><a href="./about.html">About Us</a></li>
+                <li><a href="./support.html">Support</a></li-->
+                <li><hr></li>
+                <li><a href="" id="mobile-signup">Signup</a></li>
+                <li><a href="" id="mobile-logout">Logout</a></li>
+            </ul>
+        </nav>
+        <button id="back"><i class="fa-solid fa-arrow-left"></i></button>
+    </div>
+    </footer>
+</div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="Scripts/main.js" type="module"></script>
+<script src="Scripts/home.js" ></script>
+<script src="Scripts/calendar.js"></script>
+<script src="Scripts/countdown.js"></script>
+</html>
